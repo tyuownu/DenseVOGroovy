@@ -64,3 +64,8 @@ The following publications describe the approach:
 The packages *dvo_core*, *dvo_ros*, *dvo_slam*, and *dvo_benchmark* are licensed under the GNU General Public License Version 3 (GPLv3), see http://www.gnu.org/licenses/gpl.html.
 
 The package *sophus* is licensed under the MIT License, see http://opensource.org/licenses/MIT.
+
+
+MAIN CHANGES:
+1. Change the TransformTFToEigen -> transformTFToEigen in some file like dvo_ros/util/util.h dvo_slam/src/camera_keyframe_tracking.cpp and dvo_ros/src/camera_dense_tracking.cpp
+2. Add some thing to CMakeLists.txt like -msse2 -msse3 so it support SSE. and some others.
